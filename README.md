@@ -19,7 +19,14 @@ A lightweight GTK3 frontend for managing local Ollama models.
 
 ## Installation
 
+### Recommended (Virtual Environment)
+
 ```bash
 git clone https://github.com/sleeperofsaturn/ollama-model-manager.git
 cd ollama-model-manager
+
+python -m venv venv
+source venv/bin/activate
+
 pip install -r requirements.txt
+python ollama_model_manager.py
