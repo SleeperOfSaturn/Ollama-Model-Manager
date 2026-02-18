@@ -1,23 +1,33 @@
 # Ollama Model Manager (GTK3)
 
-A lightweight GTK3 frontend for managing local Ollama models.
+A simple GTK3 frontend for managing your local Ollama models.
 
-## Features
+Pull models.  
+Delete models.  
+See progress.  
+No terminal needed.
 
-- List installed models
+---
+
+## ✨ Features
+
+- View installed models
 - Pull new models with live progress
 - Delete models with confirmation
-- Non-blocking UI (threaded downloads)
+- Non-blocking UI (no freezing during downloads)
 
-## Requirements
+---
+
+## 📦 Requirements
 
 - Linux
 - Python 3.9+
 - GTK3
 - Ollama running locally (`http://localhost:11434`)
-- `pip install -r requirements.txt`
 
-## Installation
+---
+
+## 🚀 Installation
 
 ### Recommended (Virtual Environment)
 
@@ -29,4 +39,61 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
-python ollama_model_manager.py
+python main.py
+````
+
+This keeps your system clean and works on any distro.
+
+---
+
+### Arch Linux (Alternative)
+
+You can install dependencies system-wide:
+
+```bash
+sudo pacman -S python-requests
+```
+
+Then simply run:
+
+```bash
+python ollama-model-manager.py
+```
+
+---
+
+## 🖥 Optional: Desktop Launcher
+
+If you want it in your app launcher, create a `.desktop` file:
+
+```ini
+[Desktop Entry]
+Name=Ollama Model Manager
+Exec=python3 /absolute/path/to/ollama_model_manager.py
+Icon=utilities-terminal
+Type=Application
+Categories=Utility;
+Terminal=false
+```
+
+Place it in:
+
+```
+~/.local/share/applications/
+```
+
+---
+
+## ⚙ Notes
+
+* Make sure Ollama is running before launching.
+* Uses the Ollama HTTP API under the hood; written in python.
+* Tested on Arch Linux.
+
+---
+
+## 🪪 License
+
+MIT
+Screenshots increase trust significantly.
+```
