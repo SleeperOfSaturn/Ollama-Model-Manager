@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ollama Model Manager
+Exec=python **path to main.py**
+Icon=utilities-terminal
+Type=Application
+Categories=Utility;
+Terminal=false
+
