@@ -2,6 +2,8 @@
 
 A simple GTK3 frontend for managing your local Ollama models.
 
+![Screenshot](screenshot.png)
+
 Pull models.  
 Delete models.  
 See progress.  
@@ -93,7 +95,5 @@ Place it in:
 ---
 
 ## 🪪 License
-
 MIT
-Screenshots increase trust significantly.
 ```
